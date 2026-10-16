@@ -1,0 +1,26 @@
+# Maven build output
+target/
+
+# Java compiled files
+*.class
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+config.properties
+application.properties
+
+# IDE files
+.idea/
+.vscode/
+.classpath
+.project
+.settings/
+
+# macOS files
+.DS_Store
+
+# Logs
+*.log
+classpath.txt

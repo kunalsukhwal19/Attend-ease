@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management | AttendEase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2>AttendEase</h2>
+        <span>Attendance Management</span>
+    </header>
+
+    <main class="container">
+        <h1>Mark Attendance</h1>
+        <p>Record daily employee attendance.</p>
+
+        <form action="attendance" method="post">
+            <label for="employeeId">Select Employee</label>
+            <select id="employeeId" name="employeeId" required>
+                <option value="">Select an employee</option>
+            </select>
+
+            <label for="attendanceDate">Date</label>
+            <input
+                type="date"
+                id="attendanceDate"
+                name="attendanceDate"
+                required
+            >
+
+            <label for="status">Attendance Status</label>
+            <select id="status" name="status" required>
+                <option value="PRESENT">Present</option>
+                <option value="ABSENT">Absent</option>
+            </select>
+
+            <button type="submit">Save Attendance</button>
+        </form>
+
+        <p><a href="index.html">Back to Home</a></p>
+    </main>
+
+</body>
+</html>
